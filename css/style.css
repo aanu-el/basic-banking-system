@@ -148,6 +148,20 @@ a {
   height: 100vh;
 }
 
+/* All Customers Page Styling */
+.customer_img {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.customer_img img {
+  width: 80px;
+}
+
 @media screen and (min-width: 768px) {
   body {
     margin: calc(var(--header-height) + 1rem) 0 0 0;
