@@ -45,10 +45,10 @@
             <p>Account type</p>
             <p>Balance</p>
             <div>
-              <a href="single-customer.html" class="btn btn-primary btn-sm"
+              <a href="single-customer.php" class="btn btn-primary btn-sm"
                 >View Customer</a
               >
-              <a href="#" class="btn btn-primary btn-sm">Send Money</a>
+              <a href="transfers.php" class="btn btn-primary btn-sm">Send Money</a>
             </div>
           </div>
         </div>
@@ -66,10 +66,10 @@
             <p>Account type</p>
             <p>Balance</p>
             <div>
-              <a href="single-customer.html" class="btn btn-primary btn-sm"
+              <a href="single-customer.php" class="btn btn-primary btn-sm"
                 >View Customer</a
               >
-              <a href="#" class="btn btn-primary btn-sm">Send Money</a>
+              <a href="transfers.php" class="btn btn-primary btn-sm">Send Money</a>
             </div>
           </div>
         </div>
@@ -87,10 +87,10 @@
             <p>Account type</p>
             <p>Balance</p>
             <div>
-              <a href="single-customer.html" class="btn btn-primary btn-sm"
+              <a href="single-customer.php" class="btn btn-primary btn-sm"
                 >View Customer</a
               >
-              <a href="#" class="btn btn-primary btn-sm">Send Money</a>
+              <a href="transfers.php" class="btn btn-primary btn-sm">Send Money</a>
             </div>
           </div>
         </div>
@@ -108,10 +108,10 @@
             <p>Account type</p>
             <p>Balance</p>
             <div>
-              <a href="single-customer.html" class="btn btn-primary btn-sm"
+              <a href="single-customer.php" class="btn btn-primary btn-sm"
                 >View Customer</a
               >
-              <a href="#" class="btn btn-primary btn-sm">Send Money</a>
+              <a href="transfers.php" class="btn btn-primary btn-sm">Send Money</a>
             </div>
           </div>
         </div>
@@ -129,10 +129,10 @@
             <p>Account type</p>
             <p>Balance</p>
             <div>
-              <a href="single-customer.html" class="btn btn-primary btn-sm"
+              <a href="single-customer.php" class="btn btn-primary btn-sm"
                 >View Customer</a
               >
-              <a href="transfers.html" class="btn btn-primary btn-sm"
+              <a href="transfers.php" class="btn btn-primary btn-sm"
                 >Send Money</a
               >
             </div>
@@ -152,10 +152,10 @@
             <p>Account type</p>
             <p>Balance</p>
             <div>
-              <a href="single-customer.html" class="btn btn-primary btn-sm"
+              <a href="single-customer.php" class="btn btn-primary btn-sm"
                 >View Customer</a
               >
-              <a href="transfers.html" class="btn btn-primary btn-sm"
+              <a href="transfers.php" class="btn btn-primary btn-sm"
                 >Send Money</a
               >
             </div>
@@ -175,10 +175,10 @@
             <p>Account type</p>
             <p>Balance</p>
             <div>
-              <a href="single-customer.html" class="btn btn-primary btn-sm"
+              <a href="single-customer.php" class="btn btn-primary btn-sm"
                 >View Customer</a
               >
-              <a href="transfers.html" class="btn btn-primary btn-sm"
+              <a href="transfers.php" class="btn btn-primary btn-sm"
                 >Send Money</a
               >
             </div>
@@ -198,10 +198,10 @@
             <p>Account type</p>
             <p>Balance</p>
             <div>
-              <a href="single-customer.html" class="btn btn-primary btn-sm"
+              <a href="single-customer.php" class="btn btn-primary btn-sm"
                 >View Customer</a
               >
-              <a href="transfers.html" class="btn btn-primary btn-sm"
+              <a href="transfers.php" class="btn btn-primary btn-sm"
                 >Send Money</a
               >
             </div>
@@ -221,10 +221,10 @@
             <p>Account type</p>
             <p>Balance</p>
             <div>
-              <a href="single-customer.html" class="btn btn-primary btn-sm"
+              <a href="single-customer.php" class="btn btn-primary btn-sm"
                 >View Customer</a
               >
-              <a href="transfers.html" class="btn btn-primary btn-sm"
+              <a href="transfers.php" class="btn btn-primary btn-sm"
                 >Send Money</a
               >
             </div>
@@ -244,10 +244,10 @@
             <p>Account type</p>
             <p>Balance</p>
             <div>
-              <a href="single-customer.html" class="btn btn-primary btn-sm"
+              <a href="single-customer.php" class="btn btn-primary btn-sm"
                 >View Customer</a
               >
-              <a href="transfers.html" class="btn btn-primary btn-sm"
+              <a href="transfers.php" class="btn btn-primary btn-sm"
                 >Send Money</a
               >
             </div>

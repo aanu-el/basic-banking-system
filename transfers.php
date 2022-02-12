@@ -37,7 +37,7 @@
       <section class="text-center p-5 my-5">
         <!-- <span style="font-size: 100px">&#128515;</span> -->
         <div class="form">
-          <form action="transfers.html" method="post">
+          <form action="transfers.php" method="post">
             <select class="form-select-sm mb-3">
               <option selected>Open Customers List</option>
               <option value="1">One</option>

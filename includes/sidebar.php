@@ -14,7 +14,7 @@
             <span class="nav_logo-name">Ed Bank</span>
           </a>
           <div class="nav_list">
-            <a href="index.php" class="nav_link active">
+            <a href="index.php" class="nav_link">
               <i class="bx bx-grid-alt nav_icon"></i>
               <span class="nav_name">Dashboard</span>
             </a>

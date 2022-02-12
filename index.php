@@ -58,7 +58,7 @@
       <!-- Buttons -->
       <div class="text-center gap-3">
         <a href="#" class="btn btn-primary btn-lg text-white">Top-up Balance</a>
-        <a href="transfers.html" class="btn btn-primary btn-lg text-white"
+        <a href="transfers.php" class="btn btn-primary btn-lg text-white"
           >Send Money</a
         >
       </div>

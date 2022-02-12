@@ -36,7 +36,7 @@
       <!-- Add Customer Form field -->
       <section class="text-center p-5 my-5">
         <div class="form">
-          <form action="transfers.html" method="post">
+          <form action="add-customers.php" method="post">
             <input
               class="mb-3"
               type="text"
@@ -73,7 +73,7 @@
         <h4>Delete Customers</h4>
         <br />
 
-        <form action="transfers.html" method="post" class="text-center">
+        <form action="" method="post" class="text-center">
           <select class="form-select-sm mb-3">
             <option selected>Select Customer to Delete</option>
             <option value="1">1</option>
