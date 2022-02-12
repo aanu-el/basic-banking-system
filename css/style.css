@@ -163,7 +163,13 @@ a {
 }
 
 /* Transfer Money Page Styling */
+select {
+  width: 50vw;
+}
 
+input {
+  width: 50vw;
+}
 
 @media screen and (min-width: 768px) {
   body {
@@ -196,5 +202,15 @@ a {
 
   .body-pd {
     padding-left: calc(var(--nav-width) + 188px);
+  }
+
+  /* Transfer Money Page */
+  select {
+    width: 30vw;
+    margin-right: 20px;
+  }
+
+  input {
+    width: 30vw;
   }
 }
