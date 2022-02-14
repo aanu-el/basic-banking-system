@@ -28,15 +28,15 @@
             </a>
             <a href="add-customers.php" class="nav_link">
               <i class="bx bx-user-plus nav_icon"></i>
-              <span class="nav_name">Add New Customers</span>
+              <span class="nav_name">Update Customers List</span>
             </a>
-            <a href="delete-customers.php" class="nav_link">
-              <i class="bx bx-eraser nav_icon"></i>
-              <span class="nav_name">Delete Customers</span>
+            <a href="change-pin.php" class="nav_link">
+              <i class="bx bx-key nav_icon"></i>
+              <span class="nav_name">Change Transaction Pin</span>
             </a>
           </div>
         </div>
-        <a href="#" class="nav_link">
+        <a href="" class="nav_link">
           <i class="bx bxs-copyright nav_icon"></i>
           <span class="nav_name">Eleos 2020</span>
         </a>

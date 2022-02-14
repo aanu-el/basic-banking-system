@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="css/style.css" />
 
     <!-- Page Title -->
-    <title>Ed Bank | Add New Customers</title>
+    <title>Ed Bank | Change Transaction Pin</title>
   </head>
 
   <body id="body-pd">
@@ -31,33 +31,27 @@
 
     <!--Container Main start-->
     <div class="height-100">
-      <h4 class="pt-2">Add New Customers</h4>
+      <h4 class="pt-2">Change Transaction Pin</h4>
 
       <!-- Add Customer Form field -->
       <section class="text-center p-5 my-5">
         <div class="form">
-          <form action="delete-customers.php" method="post">
+          <form action="change-pin.php" method="post">
             <input
               class="mb-3"
               type="text"
               name="amount"
               id="amount"
-              placeholder="Name of Customer"
+              placeholder="Old Transaction Pin"
             />
-
+            <br>
             <input
               class="mb-3"
               type="text"
               name="pin"
               id="pin"
-              placeholder="Customer's Email"
+              placeholder="New Transaction Pin"
             />
-
-            <select class="form-select-sm mb-3">
-              <option selected>Choose account type</option>
-              <option value="1">Saving</option>
-              <option value="2">Current</option>
-            </select>
 
             <br />
 
@@ -66,32 +60,6 @@
             </button>
           </form>
         </div>
-      </section>
-
-      <!-- Delete Customers section -->
-      <section class="my-5 py-5">
-        <h4>Delete Customers</h4>
-        <br />
-
-        <form action="delete-customers.php" method="post" class="text-center">
-          <select class="form-select-sm mb-3">
-            <option selected>Select Customer to Delete</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="2">3</option>
-            <option value="2">4</option>
-            <option value="2">5</option>
-            <option value="2">6</option>
-            <option value="2">7</option>
-            <option value="2">8</option>
-          </select>
-
-          <br />
-
-          <button type="submit" class="btn btn-primary btn-sm">
-            Delete Customer
-          </button>
-        </form>
       </section>
     </div>
     <!--Container Main end-->
