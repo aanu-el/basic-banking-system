@@ -1,3 +1,8 @@
+<!-- Connect Database -->
+<?php require_once('includes/connect_db.php'); ?>
+<!-- Include Basic Functions -->
+<?php require_once('includes/functions.php'); ?>
+
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -32,24 +37,48 @@
 
     <!--Container Main start-->
     <div class="main height-100">
-      <h4 class="text-center p-5">Welcome Admin!</h4>
+        <?php 
+          $user_query = get_user(); //get the value from the include file
+          while($user = mysqli_fetch_array($user_query)){
+            ?>
+            <h4 class="text-center p-5">Welcome <?php echo $user['username']; ?>!</h4>
+        <?php
+          }
+        ?>
+     
 
       <!-- Account Balance box -->
       <div class="text-center m-5">
+        
         <h4 class="display-6">Account Balance:</h4>
 
         <div class="d-sm-flex d-grid gap-sm-4 my-4 justify-content-center">
           <div class="card text-white mb-3" style="width: 18rem">
             <div class="card-header bg-primary">USD</div>
             <div class="card-body">
-              <h3 class="card-title text-dark p-3">$250</h3>
+              <?php
+                $user_query = get_user();
+                while($user = mysqli_fetch_array($user_query)){
+                  ?>
+                  <h3 class="card-title text-dark p-3">$<?php echo $user['usd_balance']; ?></h3>
+                  <?php
+                }
+              ?>
+              
             </div>
           </div>
 
           <div class="card text-white mb-3" style="width: 18rem">
             <div class="card-header bg-primary">Naira</div>
             <div class="card-body">
-              <h3 class="card-title text-dark p-3">#125,000</h3>
+            <?php
+                $user_query = get_user();
+                while($user = mysqli_fetch_array($user_query)){
+                  ?>
+              <h3 class="card-title text-dark p-3">#<?php echo $user['naira_balance']; ?></h3>
+                  <?php
+                }
+              ?>
             </div>
           </div>
         </div>

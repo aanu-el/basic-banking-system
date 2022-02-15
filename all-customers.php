@@ -1,3 +1,8 @@
+<!-- Connect Database -->
+<?php require_once('includes/connect_db.php'); ?>
+<!-- Include Basic Functions -->
+<?php require_once('includes/functions.php'); ?>
+
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -36,6 +41,9 @@
       <!-- customers details section-->
       <section class="p-5">
         <!-- First customer -->
+        <?php
+          
+        ?>
         <div class="d-flex">
           <div class="customer_img">
             <img src="images/avatar.JPG" alt="" />

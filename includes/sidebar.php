@@ -1,9 +1,21 @@
+
 <header class="header" id="header">
       <div class="header_toggle">
         <i class="bx bx-menu" id="header-toggle"></i>
       </div>
       <div class="header_img">
-        <img src="images/avatar.JPG" alt="" />
+      <?php
+        $sql = "SELECT * FROM user" ;
+        $query = mysqli_query($conn, $sql);
+        if(!$query){
+          die('Database query failed' . mysqli_error());
+        }
+        while($row = mysqli_fetch_array($query)){
+          ?>
+            <img src="images/<?php echo $row['image']; ?>" alt="" />
+        <?php
+        }
+?>
       </div>
     </header>
     <div class="l-navbar" id="nav-bar">
