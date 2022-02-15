@@ -21,9 +21,11 @@
     function get_all_customers(){
         global $conn;
 
-        $customers_sql = "SELECT * FROM customers ORDER BY customer_id ASC";
+        $customers_sql = "SELECT * FROM customers ORDER BY customers_id ASC";
         $customers_query = mysqli_query($conn, $customers_sql);
         confirm_query($customers_query);
+
+        return $customers_query;
     }
 
 ?>

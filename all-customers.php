@@ -42,228 +42,32 @@
       <section class="p-5">
         <!-- First customer -->
         <?php
-          
+          $customers_query = get_all_customers();
+          while($all_customers = mysqli_fetch_array($customers_query)){
+            ?>
+          <div class="d-flex">
+          <div class="customer_img">
+            <img src="images/<?php echo $all_customers['image']; ?>" alt="" />
+          </div>
+          <div class="ms-3">
+            <p><b>Name:</b> &nbsp; <?php echo $all_customers['name']; ?></p>
+            <p><b>Account Type:</b> &nbsp; <?php echo $all_customers['account_type']; ?> </p>
+            <p><b>USD Balance:</b> &nbsp; <?php echo $all_customers['usd_balance']; ?> </p>
+            <p><b>Naira Balance:</b> &nbsp; <?php echo $all_customers['naira_balance']; ?> </p>
+            <div>
+              <a href="single-customer.php" class="btn btn-primary btn-sm"
+                >View Customer</a
+              >
+              <a href="transfers.php" class="btn btn-primary btn-sm">Send Money</a>
+            </div>
+          </div>
+        </div>
+        <br />
+        <hr style="width: 50vw" />
+        <br />
+            <?php
+          }
         ?>
-        <div class="d-flex">
-          <div class="customer_img">
-            <img src="images/avatar.JPG" alt="" />
-          </div>
-          <div class="ms-3">
-            <p>Name</p>
-            <p>Account type</p>
-            <p>Balance</p>
-            <div>
-              <a href="single-customer.php" class="btn btn-primary btn-sm"
-                >View Customer</a
-              >
-              <a href="transfers.php" class="btn btn-primary btn-sm">Send Money</a>
-            </div>
-          </div>
-        </div>
-        <br />
-        <hr style="width: 50vw" />
-        <br />
-
-        <!-- Second customer -->
-        <div class="d-flex">
-          <div class="customer_img">
-            <img src="images/avatar.JPG" alt="" />
-          </div>
-          <div class="ms-3">
-            <p>Name</p>
-            <p>Account type</p>
-            <p>Balance</p>
-            <div>
-              <a href="single-customer.php" class="btn btn-primary btn-sm"
-                >View Customer</a
-              >
-              <a href="transfers.php" class="btn btn-primary btn-sm">Send Money</a>
-            </div>
-          </div>
-        </div>
-        <br />
-        <hr style="width: 50vw" />
-        <br />
-
-        <!-- Third customer -->
-        <div class="d-flex">
-          <div class="customer_img">
-            <img src="images/avatar.JPG" alt="" />
-          </div>
-          <div class="ms-3">
-            <p>Name</p>
-            <p>Account type</p>
-            <p>Balance</p>
-            <div>
-              <a href="single-customer.php" class="btn btn-primary btn-sm"
-                >View Customer</a
-              >
-              <a href="transfers.php" class="btn btn-primary btn-sm">Send Money</a>
-            </div>
-          </div>
-        </div>
-        <br />
-        <hr style="width: 50vw" />
-        <br />
-
-        <!-- Fourth customer -->
-        <div class="d-flex">
-          <div class="customer_img">
-            <img src="images/avatar.JPG" alt="" />
-          </div>
-          <div class="ms-3">
-            <p>Name</p>
-            <p>Account type</p>
-            <p>Balance</p>
-            <div>
-              <a href="single-customer.php" class="btn btn-primary btn-sm"
-                >View Customer</a
-              >
-              <a href="transfers.php" class="btn btn-primary btn-sm">Send Money</a>
-            </div>
-          </div>
-        </div>
-        <br />
-        <hr style="width: 50vw" />
-        <br />
-
-        <!-- Fifth customer -->
-        <div class="d-flex">
-          <div class="customer_img">
-            <img src="images/avatar.JPG" alt="" />
-          </div>
-          <div class="ms-3">
-            <p>Name</p>
-            <p>Account type</p>
-            <p>Balance</p>
-            <div>
-              <a href="single-customer.php" class="btn btn-primary btn-sm"
-                >View Customer</a
-              >
-              <a href="transfers.php" class="btn btn-primary btn-sm"
-                >Send Money</a
-              >
-            </div>
-          </div>
-        </div>
-        <br />
-        <hr style="width: 50vw" />
-        <br />
-
-        <!-- Six customer -->
-        <div class="d-flex">
-          <div class="customer_img">
-            <img src="images/avatar.JPG" alt="" />
-          </div>
-          <div class="ms-3">
-            <p>Name</p>
-            <p>Account type</p>
-            <p>Balance</p>
-            <div>
-              <a href="single-customer.php" class="btn btn-primary btn-sm"
-                >View Customer</a
-              >
-              <a href="transfers.php" class="btn btn-primary btn-sm"
-                >Send Money</a
-              >
-            </div>
-          </div>
-        </div>
-        <br />
-        <hr style="width: 50vw" />
-        <br />
-
-        <!-- Seventh customer -->
-        <div class="d-flex">
-          <div class="customer_img">
-            <img src="images/avatar.JPG" alt="" />
-          </div>
-          <div class="ms-3">
-            <p>Name</p>
-            <p>Account type</p>
-            <p>Balance</p>
-            <div>
-              <a href="single-customer.php" class="btn btn-primary btn-sm"
-                >View Customer</a
-              >
-              <a href="transfers.php" class="btn btn-primary btn-sm"
-                >Send Money</a
-              >
-            </div>
-          </div>
-        </div>
-        <br />
-        <hr style="width: 50vw" />
-        <br />
-
-        <!-- Eighth customer -->
-        <div class="d-flex">
-          <div class="customer_img">
-            <img src="images/avatar.JPG" alt="" />
-          </div>
-          <div class="ms-3">
-            <p>Name</p>
-            <p>Account type</p>
-            <p>Balance</p>
-            <div>
-              <a href="single-customer.php" class="btn btn-primary btn-sm"
-                >View Customer</a
-              >
-              <a href="transfers.php" class="btn btn-primary btn-sm"
-                >Send Money</a
-              >
-            </div>
-          </div>
-        </div>
-        <br />
-        <hr style="width: 50vw" />
-        <br />
-
-        <!-- Nine customer -->
-        <div class="d-flex">
-          <div class="customer_img">
-            <img src="images/avatar.JPG" alt="" />
-          </div>
-          <div class="ms-3">
-            <p>Name</p>
-            <p>Account type</p>
-            <p>Balance</p>
-            <div>
-              <a href="single-customer.php" class="btn btn-primary btn-sm"
-                >View Customer</a
-              >
-              <a href="transfers.php" class="btn btn-primary btn-sm"
-                >Send Money</a
-              >
-            </div>
-          </div>
-        </div>
-        <br />
-        <hr style="width: 50vw" />
-        <br />
-
-        <!-- Tenth customer -->
-        <div class="d-flex">
-          <div class="customer_img">
-            <img src="images/avatar.JPG" alt="" />
-          </div>
-          <div class="ms-3">
-            <p>Name</p>
-            <p>Account type</p>
-            <p>Balance</p>
-            <div>
-              <a href="single-customer.php" class="btn btn-primary btn-sm"
-                >View Customer</a
-              >
-              <a href="transfers.php" class="btn btn-primary btn-sm"
-                >Send Money</a
-              >
-            </div>
-          </div>
-        </div>
-        <br />
-        <hr style="width: 50vw" />
-        <br />
       </section>
     </div>
     <!--Container Main end-->
