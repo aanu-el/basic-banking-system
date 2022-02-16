@@ -28,4 +28,16 @@
         return $customers_query;
     }
 
+    function get_one_customer($customers){
+        global $conn;
+
+        $OneCustomer_sql = "SELECT * FROM customers WHERE select_id = {$customers}";
+        $OneCustomer_query = mysqli_query($conn, $OneCustomer_sql);
+        confirm_query($OneCustomer_query);
+
+        return $OneCustomer_query;
+
+    }
+
+
 ?>

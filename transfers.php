@@ -1,3 +1,8 @@
+<!-- Connect Database -->
+<?php require_once('includes/connect_db.php'); ?>
+<!-- Include Basic Functions -->
+<?php require_once('includes/functions.php'); ?>`
+
 <html lang="en">
   <head>
     <!-- Required meta tags -->

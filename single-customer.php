@@ -1,3 +1,8 @@
+<!-- Connect Database -->
+<?php require_once('includes/connect_db.php'); ?>
+<!-- Include Basic Functions -->
+<?php require_once('includes/functions.php'); ?>
+
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -32,26 +37,39 @@
 
     <!--Container Main start-->
     <div class="height-100">
-      <h4 class="pt-2">All Customers</h4>
+      <h4 class="pt-2">View Customers</h4>
 
       <!-- customers details section-->
       <section class="my-5 p-5">
         <!-- First customer -->
-        <div class="d-gird mb-5 text-center">
-          <div class="customer_img m-0 m-auto">
-            <img src="images/avatar.JPG" alt="" />
-          </div>
-          <div class="m-3">
-            <p>Name</p>
-            <p>Email</p>
-            <p>Account type</p>
-            <p>Balance</p>
-            <div>
-              <a href="#" class="btn btn-primary btn-sm"><span><i class="bx bx-send nav_icon"></i></span> Send Money</a>
-              <a href="#" class="btn btn-primary btn-sm"><span><i class="bx bx-eraser nav_icon"></i></span> Delete Customer</a>
+        
+        <?php
+            $customers_query = get_all_customers();
+            while($all_customers = mysqli_fetch_array($customers_query)){
+
+              $OneCustomer_query = get_one_customer($all_customers['customers_id']);
+              while($OneCustomer = mysqli_fetch_array($OneCustomer_query)){
+                ?>
+                <div class="d-gird mb-5 text-center">
+                <div class="customer_img m-0 m-auto">
+                <img src="images/<?php echo $OneCustomer['image']; ?>" alt="" />
+              </div>
+              <div class="m-3">
+                <p>Name</p>
+                <p>Email</p>
+                <p>Account type</p>
+                <p>Balance</p>
+                <div>
+                  <a href="#" class="btn btn-primary btn-sm"><span><i class="bx bx-send nav_icon"></i></span> Send Money</a>
+                  <a href="#" class="btn btn-primary btn-sm"><span><i class="bx bx-eraser nav_icon"></i></span> Delete Customer</a>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
+            <?php
+              }
+            }
+          ?>
+          
 
         <!-- Customer Transaction History -->
         <div class="text-center">
